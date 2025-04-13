@@ -1,0 +1,39 @@
+.plus-icon-popup {
+	display: flex;
+	flex-direction: row-reverse;
+	animation: add-one-to-cards 1s linear;
+}
+
+@keyframes add-one-to-cards {
+	0% {
+		scale: 0.7;
+		opacity: 0.7;
+	}
+	100% {
+		scale: 1;
+		opacity: 1;
+	}
+}
+
+.opponent-offline {
+	animation: offline-icon-blink 1s linear infinite;
+}
+
+@keyframes offline-icon-blink {
+	0% {
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.2;
+	}
+}
+
+.opponent-card-status-icon {
+	left: -25px;
+}
+.your-card-status-icon {
+	right: -25px;
+}

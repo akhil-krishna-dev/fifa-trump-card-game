@@ -1,0 +1,57 @@
+@keyframes current-card-opponent-lost {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(-700px);
+		opacity: 1;
+	}
+}
+@keyframes current-card-user-lost {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(700px);
+		opacity: 1;
+	}
+}
+
+@keyframes next-card-opponent-lost {
+	0% {
+		scale: 0.8;
+	}
+
+	100% {
+		scale: 1;
+	}
+}
+@keyframes next-card-user-lost {
+	0% {
+		scale: 0.8;
+	}
+
+	100% {
+		scale: 1;
+	}
+}
+
+.current-card-user-lost {
+	animation: current-card-user-lost 2s linear;
+}
+.current-card-opponent-lost {
+	animation: current-card-opponent-lost 2s linear;
+}
+
+.next-card {
+	position: absolute;
+	top: 145px;
+	left: 0px;
+	scale: 1;
+}
+.next-card.user-lost {
+	animation: next-card-opponent-lost 2s linear;
+}
+.next-card.opponent-lost {
+	animation: next-card-opponent-lost 2s linear;
+}
