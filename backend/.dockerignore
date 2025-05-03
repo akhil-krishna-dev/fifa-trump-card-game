@@ -1,0 +1,43 @@
+# Ignore Python cache
+__pycache__/
+django_scripts/
+
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtualenv folders
+fifa_card_game_venv/
+venv/
+env/
+venv/
+.env/
+.venv/
+
+# Ignore local dev files
+*.sqlite3
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore git repository
+.git/
+.gitignore
+
+# Ignore IDE configs
+.idea/
+.vscode/
+
+# Ignore node_modules if any
+node_modules/
+
+# Ignore media/uploads if handled externally
+media/
+
+# Ignore docker-compose override files
+docker-compose.override.yml
+
+.env
+.env.example
